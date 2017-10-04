@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/AnthonyBois/testbootstrap/issues"
   },
-  "homepage": "https://github.com/AnthonyBois/testbootstrap#readme"
+  "homepage": "https://github.com/AnthonyBois/testbootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5"
+  }
 }
