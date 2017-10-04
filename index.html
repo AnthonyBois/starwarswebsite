@@ -5,10 +5,13 @@
 	  <meta charset="utf-8">
 	  <title>Titre de la page</title>
 	  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+	  <link rel="stylesheet" href="./node_modules/flexslider/flexslider.css">
 
 	  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 	  <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
 	  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	  <script src="./node_modules/flexslider/jquery.flexslider.js"></script>
+
 
 	</head>
 	<header>
@@ -36,7 +39,38 @@
 	</header>
 	<body>
 		<div class="container mt-5">
-		  <img src="http://www.francetvinfo.fr/image/75e7dim7o-80ee/1200/450/12447781.jpg" class="img-fluid" alt="Responsive image">
+		  
+		  <div id="flexslider-carousel" class="flexslider">
+			  <ul class="slides">
+			    <li>
+			      <img src="http://jpcamara.com/wp-content/uploads/2015/02/slide-1.jpg" />
+			    </li>
+			    <li>
+			      <img src="http://jpcamara.com/wp-content/uploads/2015/02/slide-2.jpg"  />
+			    </li>
+			    <li>
+			      <img src="http://jpcamara.com/wp-content/uploads/2015/02/slide-3.jpg" />
+			    </li>
+			    <li>
+			      <img src="https://www.w3schools.com/css/img_fjords.jpg" />
+			    </li>
+			    <li>
+			      <img src="http://fr.cdn.v5.futura-sciences.com/buildsv6/images/mediumoriginal/7/8/d/78df662f14_18260_26819-ecl2-05.jpg"  />
+			    </li>
+			    <li>
+			      <img src="http://cdn2.nextinpact.com/images/bd/wide-linked-media/16069.jpg" />
+			    </li>
+			  </ul>
+		</div>
+		<script type="text/javascript">
+		$(function() {
+		  $('.flexslider').flexslider({
+		    animation: "slide",
+		    itemWidth: 200,
+		    itemMargin: 5,
+		  });
+		});
+		</script>
 		  <div class="row mt-5">
 		  	<div class="col-md-4">
 		  		<img src="https://www.w3schools.com/css/img_fjords.jpg" class="img-fluid" alt="Responsive image">
