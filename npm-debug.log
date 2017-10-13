@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\node.js\\node.exe',
+1 verbose cli   'C:\\node.js\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'swapi',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of C:\TEMP\testbootstrap\package.json
+5 warn package.json siteweb@1.0.0 No description
+6 warn package.json siteweb@1.0.0 No README data
+7 verbose installManyTop reading scoped package data from C:\TEMP\testbootstrap\node_modules\bootstrap\package.json
+8 verbose installManyTop reading scoped package data from C:\TEMP\testbootstrap\node_modules\flexslider\package.json
+9 verbose installManyTop reading scoped package data from C:\TEMP\testbootstrap\node_modules\jquery\package.json
+10 verbose installManyTop reading scoped package data from C:\TEMP\testbootstrap\node_modules\popper.js\package.json
+11 verbose readDependencies loading dependencies from C:\TEMP\testbootstrap\package.json
+12 silly cache add args [ 'swapi', null ]
+13 verbose cache add spec swapi
+14 silly cache add parsed spec Result {
+14 silly cache add   raw: 'swapi',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'swapi',
+14 silly cache add   rawSpec: '',
+14 silly cache add   spec: 'latest',
+14 silly cache add   type: 'tag' }
+15 silly addNamed swapi@latest
+16 verbose addNamed "latest" is being treated as a dist-tag for swapi
+17 info addNameTag [ 'swapi', 'latest' ]
+18 silly mapToRegistry name swapi
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry data Result {
+21 silly mapToRegistry   raw: 'swapi',
+21 silly mapToRegistry   scope: null,
+21 silly mapToRegistry   name: 'swapi',
+21 silly mapToRegistry   rawSpec: '',
+21 silly mapToRegistry   spec: 'latest',
+21 silly mapToRegistry   type: 'tag' }
+22 silly mapToRegistry uri https://registry.npmjs.org/swapi
+23 verbose addNameTag registry:https://registry.npmjs.org/swapi not in flight; fetching
+24 verbose request uri https://registry.npmjs.org/swapi
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 10:08:11
+27 verbose request id 00fed3a7a6ee7234
+28 http request GET https://registry.npmjs.org/swapi
+29 http 404 https://registry.npmjs.org/swapi
+30 verbose headers { 'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=0',
+30 verbose headers   'content-length': '2',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   date: 'Fri, 13 Oct 2017 08:08:12 GMT',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   age: '0',
+30 verbose headers   connection: 'close',
+30 verbose headers   'x-served-by': 'cache-cdg8727-CDG',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1507882092.609901,VS0,VE817',
+30 verbose headers   vary: 'Accept-Encoding' }
+31 silly get cb [ 404,
+31 silly get   { 'content-type': 'application/json',
+31 silly get     'cache-control': 'max-age=0',
+31 silly get     'content-length': '2',
+31 silly get     'accept-ranges': 'bytes',
+31 silly get     date: 'Fri, 13 Oct 2017 08:08:12 GMT',
+31 silly get     via: '1.1 varnish',
+31 silly get     age: '0',
+31 silly get     connection: 'close',
+31 silly get     'x-served-by': 'cache-cdg8727-CDG',
+31 silly get     'x-cache': 'MISS',
+31 silly get     'x-cache-hits': '0',
+31 silly get     'x-timer': 'S1507882092.609901,VS0,VE817',
+31 silly get     vary: 'Accept-Encoding' } ]
+32 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/swapi
+32 verbose stack     at makeError (C:\node.js\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+32 verbose stack     at CachingRegistryClient.<anonymous> (C:\node.js\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+32 verbose stack     at Request._callback (C:\node.js\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+32 verbose stack     at Request.self.callback (C:\node.js\node_modules\npm\node_modules\request\request.js:200:22)
+32 verbose stack     at emitTwo (events.js:87:13)
+32 verbose stack     at Request.emit (events.js:172:7)
+32 verbose stack     at Request.<anonymous> (C:\node.js\node_modules\npm\node_modules\request\request.js:1067:10)
+32 verbose stack     at emitOne (events.js:82:20)
+32 verbose stack     at Request.emit (events.js:169:7)
+32 verbose stack     at IncomingMessage.<anonymous> (C:\node.js\node_modules\npm\node_modules\request\request.js:988:12)
+33 verbose statusCode 404
+34 verbose pkgid swapi
+35 verbose cwd C:\TEMP\testbootstrap
+36 error Windows_NT 6.1.7601
+37 error argv "C:\\node.js\\node.exe" "C:\\node.js\\node_modules\\npm\\bin\\npm-cli.js" "install" "swapi" "--save"
+38 error node v4.4.5
+39 error npm  v2.15.5
+40 error code E404
+41 error 404 Registry returned 404 for GET on https://registry.npmjs.org/swapi
+41 error 404
+41 error 404 'swapi' is not in the npm registry.
+41 error 404 You should bug the author to publish it (or use the name yourself!)
+41 error 404 It was specified as a dependency of 'siteweb'
+41 error 404
+41 error 404 Note that you can also install from a
+41 error 404 tarball, folder, http url, or git url.
+42 verbose exit [ 1, true ]

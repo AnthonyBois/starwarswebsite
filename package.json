@@ -18,6 +18,7 @@
   "homepage": "https://github.com/AnthonyBois/testbootstrap#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
+    "flexslider": "^2.6.4",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.5"
   }
