@@ -27,3 +27,20 @@ body
 	background-color: black  !important;
 	font-family: 'sw1';
 }
+
+.modal-content
+{
+	background-color: black  !important;
+	border:5px solid grey;
+
+}
+
+button.close
+{
+	color:white;
+}
+
+button.close:hover
+{
+	color:grey;
+}

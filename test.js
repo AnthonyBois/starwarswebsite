@@ -21,13 +21,10 @@ $( document ).ready(function() {
 	$.getJSON( "https://swapi.co/api/people/", function( data ) {
 		jQuery.each(data.results, function()
 		{
-			$('#listeperso').append('<button type="button" class="btn btn-link" data-toggle="modal" data-target="#'+$id+'">'+this.name+'</button> </br>');
-			$('#descriptionperso').append('<div class="modal fade" id="'+$id+'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="exampleModalLabel">'+this.name+'</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><p>'+this.birth_year+'</p><p>'+this.birth_year+'</p><p>'+this.eye_color+'</p><p>'+this.gender+'</p><p>'+this.hair_color+'</p><p>'+this.height+'</p><p>'+this.mass+'</p><p>'+this.skin_color+'</p></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button></div> </div></div></div>');
+			$('#listeperso').append('<div class="col-md-4"><button type="button" class="btn btn-link" data-toggle="modal" data-target="#'+$id+'">'+this.name+'</button> </br></div>');
+			$('#descriptionperso').append('<div class="modal fade" id="'+$id+'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <div class="modal-dialog" role="document"><div class="modal-content"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><div class="modal-body"><p><h3 class="modal-title" id="exampleModalLabel">'+this.name+'</h3></p><p>Anniversaire : '+this.birth_year+'</p><p>Année de naissance : '+this.birth_year+'</p><p>Couleur des yeux : '+this.eye_color+'</p><p>Genre : '+this.gender+'</p><p>Couleur de cheveux : '+this.hair_color+'</p><p>Taille : '+this.height+'</p><p>Poid : '+this.mass+'</p><p>Couleur de peau : '+this.skin_color+'</p></div></div></div></div>');
 			$id++;
 		});
 	});
-
- 
-
 });
 
