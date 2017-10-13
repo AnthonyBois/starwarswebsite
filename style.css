@@ -1,5 +1,29 @@
+@font-face{
+    font-family : 'sw1';
+    src : url('./font/Starjedi.ttf');
+}
+
+@font-face{
+    font-family : 'sw2';
+    src : url('./font/Starjedi2.ttf');
+}
+
+
 body
 {
-	background-color:black;
+	background-image: url("http://d5qsyj6vaeh11.cloudfront.net/images/destinations/star%20wars/star-wars-landing/SW-node-Background.jpg");
 	color: rgb(255, 195, 30);
+	
+}
+
+.navbar-dark .navbar-brand
+{
+	color: rgb(255, 195, 30);
+	font-family: 'sw2';
+}
+
+.bg-dark
+{
+	background-color: black  !important;
+	font-family: 'sw1';
 }
