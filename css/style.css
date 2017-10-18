@@ -1,11 +1,11 @@
 @font-face{
     font-family : 'sw1';
-    src : url('./font/Starjedi.ttf');
+    src : url('../font/Starjedi.ttf');
 }
 
 @font-face{
     font-family : 'sw2';
-    src : url('./font/Starjedi2.ttf');
+    src : url('../font/Starjedi2.ttf');
 }
 
 
