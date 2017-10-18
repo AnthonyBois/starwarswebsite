@@ -41,9 +41,9 @@ $( document ).ready(function() {
 				else
 				{
 					id = pre;
-					 $('#listeperso').empty();
-					 $('#pagination').empty();
-					 affiche();
+					$('#listeperso').empty();
+					$('#pagination').empty();
+					affiche();
 				}	
 			});
 
